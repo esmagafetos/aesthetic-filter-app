@@ -1,0 +1,77 @@
+# Learn more https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files
+
+# dependencies
+node_modules/
+
+# Expo
+.expo/
+dist/
+web-build/
+expo-env.d.ts
+
+# Native
+.kotlin/
+*.orig.*
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+
+# Metro
+.metro-health-check*
+
+# debug
+npm-debug.*
+yarn-debug.*
+yarn-error.*
+
+# macOS
+.DS_Store
+*.pem
+
+# local env files
+.env*.local
+.env
+
+# typescript
+*.tsbuildinfo
+
+app-example
+
+# generated native folders
+/ios
+/android
+
+# Replit specific
+.replit
+replit.nix
+.config/
+.cache/
+.upm/
+.breakpoints
+
+# Logs and temporary files
+logs/
+*.log
+tmp/
+temp/
+/tmp/
+
+# Build artifacts
+build/
+*.apk
+*.aab
+*.ipa
+
+# Editor
+.vscode/*
+!.vscode/extensions.json
+.idea
+
+# Attached assets (generated files)
+attached_assets/index_*.php
+attached_assets/icon_*.ico
+
+# GitHub setup script (temporary)
+setup-github.js
