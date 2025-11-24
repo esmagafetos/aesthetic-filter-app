@@ -1,0 +1,63 @@
+{
+  "expo": {
+    "name": "Aesthetic Filter",
+    "slug": "aesthetic-filter",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "aestheticfilter",
+    "userInterfaceStyle": "dark",
+    "newArchEnabled": true,
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.aestheticfilter.app"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#0F0F1E",
+        "foregroundImage": "./assets/images/android-icon-foreground.png",
+        "backgroundImage": "./assets/images/android-icon-background.png",
+        "monochromeImage": "./assets/images/android-icon-monochrome.png"
+      },
+      "package": "com.aestheticfilter.app",
+      "edgeToEdgeEnabled": true,
+      "predictiveBackGestureEnabled": false
+    },
+    "web": {
+      "output": "single",
+      "favicon": "./assets/images/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/images/splash-icon.png",
+          "imageWidth": 200,
+          "resizeMode": "contain",
+          "backgroundColor": "#0F0F1E",
+          "dark": {
+            "backgroundColor": "#0F0F1E"
+          }
+        }
+      ],
+      "expo-web-browser",
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "The app needs access to your photos to apply aesthetic filters.",
+          "cameraPermission": "The app needs access to your camera to take photos and apply filters."
+        }
+      ],
+      [
+        "expo-media-library",
+        {
+          "photosPermission": "The app needs access to save filtered images to your gallery.",
+          "savePhotosPermission": "The app needs permission to save filtered images to your gallery."
+        }
+      ]
+    ],
+    "experiments": {
+      "reactCompiler": true
+    }
+  }
+}
